@@ -1,6 +1,7 @@
 class Movie < ActiveRecord::Base
 
   def can_be_instantiated_and_then_saved
+    binding.pry
     movie = Movie.new
     movie.title = "This is a title."
     movie.save
